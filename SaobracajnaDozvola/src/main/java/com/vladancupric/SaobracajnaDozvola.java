@@ -9,18 +9,18 @@ public class SaobracajnaDozvola {
 	public SaobracajnaDozvola() {
 		super();
 	}
-
+	@Autowired
 	public SaobracajnaDozvola(Osoba vlasnik, Auto automobil) {
 		super();
 		this.vlasnik = vlasnik;
 		this.automobil = automobil;
 	}
-	@Autowired
+	//@Autowired
 	public void setVlasnik(Osoba vlasnik) {
 		this.vlasnik = vlasnik;
 	}
 	
-	@Autowired
+	//@Autowired
 	public void setAutomobil(Auto automobil) {
 		this.automobil = automobil;
 	}

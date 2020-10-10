@@ -3,13 +3,15 @@ package com.vladancupric;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class SaobracajnaDozvola {
+	@Autowired
 	private Osoba vlasnik;
+	@Autowired
 	private Auto automobil;
 	
 	public SaobracajnaDozvola() {
 		super();
 	}
-	@Autowired
+	//@Autowired
 	public SaobracajnaDozvola(Osoba vlasnik, Auto automobil) {
 		super();
 		this.vlasnik = vlasnik;

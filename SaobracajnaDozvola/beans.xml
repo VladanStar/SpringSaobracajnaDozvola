@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="automobil" class="com.vladancupric.Auto">
+		<constructor-arg name="marka" type="String" value="Mercedes"></constructor-arg>
+		<constructor-arg name="tip" type="String" value="200S"></constructor-arg>
+	</bean>
+	<bean id="vlasnik" class="com.vladancupric.Osoba">
+		<constructor-arg name="ime" type="String" value="Vladan"></constructor-arg>
+		<constructor-arg name="prezime" type="String" value="Cupric"></constructor-arg>
+		<constructor-arg name="jmbg" type="long"
+			value="1103973721919">
+		</constructor-arg>
+	</bean>
+	<bean id="saobracajnaDozvola"
+		class="com.vladancupric.SaobracajnaDozvola" autowire="byName">
+	
+	</bean>
+</beans>
